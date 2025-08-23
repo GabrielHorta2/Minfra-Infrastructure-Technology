@@ -365,6 +365,6 @@ footer {
     }
 
     .google-form-container iframe {
-        height: 1350px; /* <<< Ajuste este valor se necessário para celular */
+        height: 1350px; /* <<< Ajuste valor mobile */
     }
 }
