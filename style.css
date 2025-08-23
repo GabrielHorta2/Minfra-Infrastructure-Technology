@@ -4,21 +4,28 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* ========================================= */
+/* PALETA DE CORES ATUALIZADA                */
+/* ========================================= */
 :root {
-    --bg-color: #0d1117;
-    --primary-color: #1f2937;
-    --secondary-color: #374151;
-    --border-color: #4b5563;
-    --text-color: #d1d5db;
-    --highlight-color: #38bdf8;
+    /* MUDANÇA AQUI: Cor de fundo um pouco mais escura */
+    --bg-color: #1a2029;
+    
+    --primary-color: #2b3544;
+    --secondary-color: #4a5a70;
+    --border-color: #4a5a70;
+    --text-color: #e1e8f0;
+    --highlight-color: #2978c8;
     --font-family: 'Poppins', sans-serif;
 }
+
 html {
     scroll-behavior: smooth;
 }
 body {
     font-family: var(--font-family);
-    background-color: var(--bg-color);
+    background-color: var(--bg-color); /* Esta linha usa a variável que mudamos */
     color: var(--text-color);
     line-height: 1.6;
 }
@@ -60,7 +67,7 @@ section {
 .btn-primary:hover {
     background-color: var(--highlight-color);
     border-color: var(--highlight-color);
-    color: #0d1117;
+    color: #ffffff;
 }
 .btn-secondary {
     background-color: transparent;
@@ -68,7 +75,7 @@ section {
     border-color: var(--border-color);
 }
 .btn-secondary:hover {
-    background-color: var(--border-color);
+    background-color: var(--secondary-color);
 }
 
 /* CABEÇALHO */
@@ -94,7 +101,6 @@ header .container {
 .logo img {
     height: 60px;
     width: auto;
-    
 }
 .logo-text h1 {
     font-size: 1.8rem;
@@ -271,16 +277,12 @@ footer {
 /* ESTILOS PARA O FORMULÁRIO (ADICIONADOS AQUI)      */
 /* ================================================= */
 .form-section.container {
-    /* MUDANÇA 1: Aumentado o espaçamento superior */
     padding-top: 45px;
 }
-
 .google-form-container iframe {
     width: 100%;
     border: none;
-    
-    /* MUDANÇA 2: Altura fixa para o formulário não ter scroll interno */
-    height: 1350px; /* <<< Ajuste este valor se necessário */
+    height: 1350px;
 }
 
 /* ================================================= */
@@ -294,7 +296,6 @@ footer {
     font-size: 1.8rem;
     cursor: pointer;
 }
-
 @media (max-width: 992px) {
     header .container {
         flex-wrap: wrap;
@@ -326,7 +327,6 @@ footer {
         flex-direction: column;
     }
 }
-
 @media (max-width: 768px) {
     h1 { font-size: 2.2rem; }
     h2 { font-size: 1.8rem; }
@@ -358,13 +358,10 @@ footer {
     .logo-text h1 {
         font-size: 1.5rem;
     }
-
-    /* MUDANÇA 3: Espaçamento e altura para o formulário no mobile */
     .form-section.container {
         padding-top: 80px; 
     }
-
     .google-form-container iframe {
-        height: 1350px; /* <<< Ajuste valor mobile */
+        height: 1350px;
     }
 }
