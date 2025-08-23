@@ -47,7 +47,7 @@ h3 { font-size: 1.5rem; }
 p { margin-bottom: 1rem; font-size: 1rem; }
 
 section {
-    padding: 80px 0;
+    padding: 45px 0;
 }
 
 /* BOTÕES */
@@ -107,7 +107,7 @@ header .container {
 }
 
 .logo img {
-    height: 55px;
+    height: 50px;
     width: auto;
 }
 
@@ -145,7 +145,7 @@ header nav ul li a:hover {
 
 /* SEÇÃO HERO */
 .hero {
-    padding: 100px 0;
+    padding: 100px 0 60px 0;
     text-align: center;
 }
 
@@ -153,25 +153,6 @@ header nav ul li a:hover {
 .hero h2 { font-size: 1.5rem; color: var(--text-color); }
 .hero p { max-width: 700px; margin: 0 auto 30px; }
 .hero-buttons .btn { margin: 0 10px; }
-
-.hero-stats {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    margin-top: 80px;
-    border-top: 1px solid var(--primary-color);
-    padding-top: 40px;
-}
-
-.stat h3 {
-    font-size: 2.5rem;
-    margin: 0;
-}
-
-.stat p {
-    font-size: 1rem;
-    margin: 0;
-}
 
 /* SEÇÃO DE SERVIÇOS */
 .service-cards {
@@ -277,48 +258,7 @@ header nav ul li a:hover {
 .member-info span { font-weight: 600; color: var(--highlight-color); display: block; margin-bottom: 10px; }
 .member-info p { margin: 0; font-size: 0.9rem; }
 
-/* SEÇÃO CONTATO */
-.contact-content {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 50px;
-    margin-top: 50px;
-}
-
-.contact-form {
-    background-color: var(--primary-color);
-    padding: 40px;
-    border-radius: 12px;
-    border: 1px solid var(--border-color);
-}
-
-.form-group-row { display: flex; gap: 20px; }
-.form-group { width: 100%; margin-bottom: 20px; }
-
-.form-group label { display: block; margin-bottom: 8px; font-weight: 600; }
-.form-group input, .form-group textarea {
-    width: 100%;
-    padding: 12px;
-    border-radius: 8px;
-    border: 1px solid var(--border-color);
-    background-color: var(--secondary-color);
-    color: var(--text-color);
-    font-family: var(--font-family);
-}
-.btn-full { width: 100%; padding: 15px; }
-
-.contact-info { display: flex; flex-direction: column; gap: 20px; }
-.info-item {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    background-color: var(--primary-color);
-    padding: 20px;
-    border-radius: 12px;
-    border: 1px solid var(--border-color);
-}
-.info-item i { font-size: 1.8rem; color: var(--highlight-color); }
-.info-item p, .info-item h4 { margin: 0; }
+/* OS ESTILOS DA SEÇÃO DE CONTATO FORAM REMOVIDOS DAQUI */
 
 /* RODAPÉ */
 footer {
@@ -335,24 +275,6 @@ footer {
 }
 
 .footer-about h3 { font-size: 1.8rem; }
-.social-icons { display: flex; gap: 15px; margin-top: 20px; }
-.social-icons a {
-    color: var(--text-color);
-    font-size: 1.2rem;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid var(--border-color);
-    border-radius: 50%;
-    transition: all 0.3s ease;
-}
-.social-icons a:hover {
-    background-color: var(--highlight-color);
-    color: var(--bg-color);
-    border-color: var(--highlight-color);
-}
 
 .footer-links ul, .footer-nav { list-style: none; }
 .footer-links ul li { margin-bottom: 10px; }
@@ -386,10 +308,7 @@ footer {
 .footer-nav { display: flex; gap: 20px; }
 
 
-/* ========================================= */
-/* ESTILOS PARA RESPONSIVIDADE (MOBILE/TABLET) */
-/* ========================================= */
-
+/* ESTILOS PARA RESPONSIVIDADE */
 .menu-toggle {
     display: none;
     background: none;
@@ -434,15 +353,10 @@ footer {
 @media (max-width: 768px) {
     h1 { font-size: 2.2rem; }
     h2 { font-size: 1.8rem; }
-    section { padding: 60px 0; }
+    section { padding: 50px 0; }
 
     .hero h1 { font-size: 2.8rem; }
-    .hero-stats {
-        flex-direction: column;
-        gap: 30px;
-    }
     .service-cards,
-    .contact-content,
     .footer-content {
         grid-template-columns: 1fr;
     }
@@ -453,14 +367,10 @@ footer {
     .member-info {
         text-align: center;
     }
-    .form-group-row {
-        flex-direction: column;
-        gap: 0;
-    }
+
     footer .footer-content {
         text-align: center;
     }
-    .footer-about .social-icons,
     footer .footer-contact p {
         justify-content: center;
     }
